@@ -12,6 +12,7 @@
     "grunt-express-server": "^0.4.19"
   },
   "dependencies": {
-    "express": "^4.9.5"
+    "express": "^4.9.5",
+    "hbs": "^2.7.0"
   }
 }

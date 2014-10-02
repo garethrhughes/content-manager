@@ -9,7 +9,7 @@ module.exports = (grunt) ->
         files: 'build/**/*.js'
         tasks:  [ 'express:dev' ]
         options:
-          spawn: false 
+          spawn: false
     coffee:
       compile:
         expand: true
