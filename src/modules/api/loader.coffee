@@ -1,2 +1,5 @@
 module.exports = (apiVersion) ->
-  require "./version/#{apiVersion}"
+  try
+    return require "./version/#{apiVersion}"
+  catch error
+    return false
