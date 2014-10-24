@@ -3,10 +3,11 @@ sendJson = (res, path, data) ->
   res.end JSON.stringify
     'api-version' : 1
     'request' : path
-    'body': {}
+    'body': data
 
 module.exports =
   load: (res, path) ->
+    console.log 'load'
     sendJson res, path,
       path: path
 

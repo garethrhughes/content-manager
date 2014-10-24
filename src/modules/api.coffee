@@ -1,9 +1,6 @@
 apiLoader = require './api/loader'
 
 module.exports =
-  index: (req, res) ->
-    res.render 'api/index'
-
   api: (req, res) ->
     api = apiLoader req.params.version
     if api
